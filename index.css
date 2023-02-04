@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* min-height: 100vh; */
+    background: #0c1022;
+}
+.box{
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    background: rgb(0, 0, 0, .75) ;
+    border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.box::before{
+    content: '';
+    position:absolute;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+    }
+    .box::after{
+        content: '';
+        position:absolute;
+        width: 60rem;
+        height: 60rem;
+        border-radius: 50%;
+        background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+        /* animation: animate 4s linear infinite;
+        animation-delay: -2s; */
+        }
+        @keyframes animate{
+            0%{
+        transform: rotate(0deg);
+            }
+            100%{
+        transform: rotate(360deg);
+            }
+        }
+/* .box::before{
+    content: '';
+    position:absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+    }
+    .box::after{
+    content: '';
+    position:absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+    }
+    
+    @keyframes animate{
+        0%{
+    transform: rotate(0deg);
+        }
+        100%{
+    transform: rotate(360deg);
+        }
+    }
+    .test{
+        /* background: rgb(70, 129, 36);
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        margin: .6rem;
+        border-radius: 30px;
+        text-align: center; */
+       /*  position: absolute;
+        display: flex;
+        inset: 5px;
+        border-radius: 50%;
+        background: #0c1022;
+        z-index: 10;
+        font-size: 2rem;
+        color: aliceblue;
+        justify-content: center;
+        padding: 1rem;
+    }
+    img{
+       width: 100px;
+       height: 100px;
+        borde *//* r-radius: 50%; */
+    /* } */ 
+
+    img{
+        
+         border-radius: 50%;
+     }
+     @media all and (max-height: 500px) {
+        
+        }
